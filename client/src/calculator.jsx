@@ -95,7 +95,7 @@ function Table() {
       if (cachedData) {
         setFlights(JSON.parse(cachedData));
       }
-      const res = await axios.get("http://localhost:3001/flight-costs");
+      const res = await axios.get("https://testapp-backend.onrender.com/flight-costs");
       console.log("API Response (/flight-costs):", res.data);
       const flightData = Array.isArray(res.data) ? res.data : [];
       setFlights(flightData);

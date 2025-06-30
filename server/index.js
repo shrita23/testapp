@@ -9,6 +9,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.get('/', (req, res) => {
+  res.send('Backend is running ✅');
+});
+
+
 // 🔌 DATABASE CONNECTIONS
 
 const flightConnection = mongoose.createConnection("mongodb+srv://tanugarima712:tanu2004@cluster0.4glcoq0.mongodb.net/flight_database", {
