@@ -94,7 +94,7 @@ function FlightTrackingTable() {
       if (cachedData) {
         setFlights(JSON.parse(cachedData));
       }
-      const res = await axios.get("https://testapp-backend.onrender.com/flights-with-durations");
+      const res = await axios.get("https://airport-skzq.onrender.com/flights-with-durations");
       const flightLogs = res.data;
 
       const flightMap = {};
