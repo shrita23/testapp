@@ -26,10 +26,9 @@ const LandingPage = () => {
         </div>
         <nav>
           <ul className="flex space-x-12">
-            <li><Link to="/landing" className="cursor-pointer font-bold hover:text-gray-600 transition text-black dark:text-white duration-300">Home</Link></li>
+            <li><Link to="/landingpage" className="cursor-pointer font-bold hover:text-gray-600 transition text-black dark:text-white duration-300">Home</Link></li>
             <li><Link to="/details" className="cursor-pointer font-bold hover:text-gray-600 text-black dark:text-white transition duration-300">Flight Logs</Link></li>
             <li><Link to="/calculator" className="cursor-pointer font-bold hover:text-gray-600 text-black dark:text-white transition duration-300">Cost Details</Link></li>
-            <li><Link to="/" className="cursor-pointer font-bold hover:text-gray-600 text-black dark:text-white transition duration-300">LogOut</Link></li>
           </ul>
         </nav>
       </header>
