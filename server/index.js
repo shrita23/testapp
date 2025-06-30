@@ -7,11 +7,13 @@ const createFlightLogModel = require('./models/flightLog');
 
 const app = express();
 app.use(express.json());
-app.use(cors());
 
 app.get('/', (req, res) => {
   res.send('Backend is running ✅');
 });
+app.use(cors({
+    origin: 'https://testapp-t31j.vercel.app'
+}));
 
 
 // 🔌 DATABASE CONNECTIONS
